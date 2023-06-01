@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ASSIGNMENT1</title>
+<style>
+
+* {
+	box-sizing: border-box;
+}	
+h1 {
+	margin-bottom: 10px;
+}
+p {
+	border: 1px solid black;
+	background-color: royalblue;
+	width: 90%;
+	height: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Helvetica;
+	color: white;
+}
+
+.row {
+	width: 100%;
+}
+@media (min-width: 992px) {
+	.col-lg-3{
+		float:left;
+		border: 1px solid red;
+	}
+	.col-lg-3{
+		width: 33.33%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-3{
+		float: left;
+		border:1px solid red;
+	}
+	.col-md-3{
+		width: 50%;
+	}
+}
+
+@media (max-width: 767px){
+	.col-sl-3{
+		float:left;
+		border: 1px solid red;
+	}
+	.col-sl-3{
+		width: 100%;
+	}
+}
+
+</style>
+</head>
+<body>
+<h1>Aassignment1</h1>
+
+<div class="row">
+	<div class="col-lg-3 col-md-3 col-sl-3"><p>Item 1</p></div> 
+	<div class="col-lg-3 col-md-3 col-sl-3"><p>Item 2</p></div> 
+	<div class="col-lg-3 col-md-3 col-sl-3"><p>Item 3</p></div> 
+</body>
+</html>
