@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: 'YourChosenFont', sans-serif; /* Optional: Set a specific font-family */
+}
+
+.container {
+    box-sizing: border-box;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.section {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: #e0e0e0; /* Set your desired background color */
+}
+
+.section-title {
+    position: relative;
+    text-align: right;
+    margin: 0;
+    padding: 10px;
+    background-color: #80aaff; /* Set your desired background color for section title */
+}
+
+.dummy-text {
+    padding: 20px;
+    margin: 0;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 50%;
+    }
+    .section:nth-child(3) {
+        clear: both;
+    }
+}
+
+@media (min-width: 992px) {
+    .section {
+        width: 33.33%;
+    }
+}
